@@ -1,19 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body 
-{
-    font-family: "times new roman";
-    background-image: url('fondo.jpg');
+body {
+  background-color: aqua;
 }
 
-.form-browser h1 {
-    margin: 0;
-    text-align: center;
-    height: 70px;
-    margin-bottom: 50px;
-    border-bottom: 2px solid;
-    font-size: 60px;
-}
+/*# sourceMappingURL=Browser.css.map */
