@@ -1,0 +1,32 @@
+// Código de estilos para el header
+$fondo: #bbb;
+.header *{
+    margin: 5px;
+}
+.header {
+    position: fixed;
+    max-width: 514px; //Hace falta if para tamaños mayores
+    min-width: 384px; //Hace falta if para tamaños menores
+    align-self: center;
+    display: flex;
+    background-color: rgb(134, 134, 134);
+}
+.settings-img {
+    border-radius: 50%;
+    background-color: $fondo;
+    width: 100px;
+    padding: 20px;
+}
+.title {
+    align-self: center;
+    background-color: $fondo;
+    padding: 1px;
+    text-align: center;
+}
+.user-img {
+    border-radius: 50%;
+    background-color: $fondo;
+    width: 100px;
+    padding: 20px;
+}
+// Fin de código de estilos para el header

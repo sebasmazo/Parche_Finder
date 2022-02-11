@@ -1,0 +1,35 @@
+.header * {
+  margin: 5px;
+}
+
+.header {
+  position: fixed;
+  max-width: 514px;
+  min-width: 384px;
+  align-self: center;
+  display: flex;
+  background-color: #868686;
+}
+
+.settings-img {
+  border-radius: 50%;
+  background-color: #bbb;
+  width: 100px;
+  padding: 20px;
+}
+
+.title {
+  align-self: center;
+  background-color: #bbb;
+  padding: 1px;
+  text-align: center;
+}
+
+.user-img {
+  border-radius: 50%;
+  background-color: #bbb;
+  width: 100px;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=browser.css.map */
