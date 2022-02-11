@@ -4,10 +4,12 @@
 
 .header {
   position: fixed;
+  width: 514px;
   max-width: 514px;
   min-width: 384px;
   align-self: center;
   display: flex;
+  z-index: 2;
   background-color: #868686;
 }
 
@@ -30,6 +32,49 @@
   background-color: #bbb;
   width: 100px;
   padding: 20px;
+}
+
+.container {
+  margin-top: 5px;
+  height: auto;
+  width: auto;
+  top: 115px;
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+}
+
+.parche {
+  display: flex;
+  max-width: 514px;
+  min-width: 384px;
+  width: 512px;
+  margin: 2px;
+  border-color: black;
+  border-width: 2px;
+  background-color: #bbb;
+}
+.parche * {
+  margin: 5px;
+}
+.parche img {
+  left: 20px;
+  width: 150px;
+  height: 150px;
+}
+.parche p {
+  text-overflow: ellipsis;
+  max-width: 200px;
+  max-height: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.parche .data h2 {
+  text-align: center;
+  border: 1px solid #000;
 }
 
 /*# sourceMappingURL=browser.css.map */

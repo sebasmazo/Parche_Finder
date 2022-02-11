@@ -1,14 +1,17 @@
 // Código de estilos para el header
 $fondo: #bbb;
-.header *{
+$ancho: 514px;
+.header * {
     margin: 5px;
 }
 .header {
     position: fixed;
-    max-width: 514px; //Hace falta if para tamaños mayores
+    width: $ancho;
+    max-width: $ancho; //Hace falta if para tamaños mayores
     min-width: 384px; //Hace falta if para tamaños menores
     align-self: center;
     display: flex;
+    z-index: 2;
     background-color: rgb(134, 134, 134);
 }
 .settings-img {
@@ -30,3 +33,46 @@ $fondo: #bbb;
     padding: 20px;
 }
 // Fin de código de estilos para el header
+.container {
+    margin-top: 5px;
+    height: auto;
+    width: auto;
+    top: 115px;
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    padding: 0;
+}
+.parche {
+    display: flex;
+    max-width: $ancho; //Hace falta if para tamaños mayores
+    min-width: 384px; //Hace falta if para tamaños menores
+    width: 512px;
+    margin: 2px;
+    border-color: black;
+    border-width: 2px;
+    background-color: $fondo;
+    * {
+        margin: 5px;
+    }
+    img {
+        left: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    p {
+        text-overflow: ellipsis;
+        max-width: 200px;
+        max-height: 100px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+    .data {
+        h2 {
+            text-align: center;
+            border: 1px solid #000;
+        }
+    }
+}
