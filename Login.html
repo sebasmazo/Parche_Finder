@@ -2,14 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
     <title>Formulario Login</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <script type="text/javascript" src="/js/Login.js"></script>
   </head>
   <body>
-    <section class="form-login">
-      
+    <div class="dadform">
+      <form class="form-login" onsubmit='Login()'>
+        <label for="user">Nombre de usuario</label><br><br>
+          <input type="text" id="username" name="user"><br><br>
+        
+        <label for="upass">Contraseña</label><br><br>
+          <input type="text" id="password" name="upass"> <br>
+        <div class="submits">
+          <input type="submit" id="btnSubmit" value="Login"> <!--Implementar onClick() con js-->
+          <button onclick='Register()' id="btnRegister" value="Register">Register</button>
+        </div>
+          
+      </form>
 
-    </section>
+    </div>
 
   </body>
 </html>
