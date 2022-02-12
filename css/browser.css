@@ -10,26 +10,30 @@
   align-self: center;
   display: flex;
   z-index: 2;
-  background-color: #868686;
+  background-color: #043565;
 }
 
 .settings-img {
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: #8BAAAD;
   width: 100px;
   padding: 20px;
 }
 
 .title {
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
   align-self: center;
-  background-color: #bbb;
+  background-color: #8BAAAD;
   padding: 1px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .user-img {
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: #8BAAAD;
   width: 100px;
   padding: 20px;
 }
@@ -51,17 +55,18 @@
   min-width: 384px;
   width: 512px;
   margin: 2px;
-  border-color: black;
-  border-width: 2px;
-  background-color: #bbb;
+  border: 1px solid #000;
+  background-color: #8BAAAD;
 }
 .parche * {
   margin: 5px;
+  transition: opacity 0.3s linear;
 }
 .parche img {
   left: 20px;
-  width: 150px;
+  width: 350px;
   height: 150px;
+  transition: all 0.5s linear;
 }
 .parche p {
   text-overflow: ellipsis;
@@ -72,7 +77,8 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-.parche .data h2 {
+.parche .data h4 {
+  margin: 10px 0px 20px 0px;
   text-align: center;
   border: 1px solid #000;
 }

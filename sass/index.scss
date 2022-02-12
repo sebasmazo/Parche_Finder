@@ -1,5 +1,5 @@
 // Código de estilos para el header
-$fondo: #bbb;
+$fondo: #8BAAAD;
 $ancho: 514px;
 .header * {
     margin: 5px;
@@ -12,7 +12,7 @@ $ancho: 514px;
     align-self: center;
     display: flex;
     z-index: 2;
-    background-color: rgb(134, 134, 134);
+    background-color: #043565;
 }
 .settings-img {
     border-radius: 50%;
@@ -21,10 +21,14 @@ $ancho: 514px;
     padding: 20px;
 }
 .title {
+    width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
     align-self: center;
     background-color: $fondo;
     padding: 1px;
     text-align: center;
+    border-radius: 5px;
 }
 .user-img {
     border-radius: 50%;
@@ -49,16 +53,20 @@ $ancho: 514px;
     min-width: 384px; //Hace falta if para tamaños menores
     width: 512px;
     margin: 2px;
-    border-color: black;
-    border-width: 2px;
+    border: 1px solid #000;
     background-color: $fondo;
+    // &:hover{
+    //     transform: scale(1.1); Al ser movil esta escala se debe hacer en caso de hold; browserscript.js
+    // }
     * {
         margin: 5px;
+        transition: opacity 0.3s linear;
     }
     img {
         left: 20px;
-        width: 150px;
+        width: 350px;
         height: 150px;
+        transition: all 0.5s linear;
     }
     p {
         text-overflow: ellipsis;
@@ -70,7 +78,8 @@ $ancho: 514px;
         -webkit-box-orient: vertical;
     }
     .data {
-        h2 {
+        h4 {
+            margin: 10px 0px 20px 0px;
             text-align: center;
             border: 1px solid #000;
         }
