@@ -1,6 +1,10 @@
 body {
-  background-color: #394050;
   background-image: url(https://www.medellin.gov.co/irj/go/km/docs/galerias/Imagenes/Galer%C3%ADa%20d%C3%ADa%20a%20d%C3%ADa%202021/20210813-reactivacion-economica-2.jpg);
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .dadform {

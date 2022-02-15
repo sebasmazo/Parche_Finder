@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
     <title>Formulario Login</title>
     <link rel="stylesheet" href="css/Login.css">
-    <script type="text/javascript" src="/js/Login.js"></script>
+    <script type="text/javascript" src="js/Login.js"></script>
+    
   </head>
   <body>
     <div class="dadform">
-      <form class="form-login" onsubmit='Login()'>
+
+      <form class="form-login" id="formulario" onkeypress="pulsar(event)" method="post">
         <label for="user">Nombre de usuario</label><br><br>
-          <input type="text" id="username" name="user"><br><br>
+          <input type="text" id="username" name="credenciales"><br><br>
         
         <label for="upass">Contraseña</label><br><br>
-          <input type="text" id="password" name="upass"> <br>
+          <input id="password" type="password" name="credenciales"> <br>
         <div class="submits">
-          <input type="submit" id="btnSubmit" value="Login"> <!--Implementar onClick() con js-->
-          <button onclick='Register()' id="btnRegister" value="Register">Register</button>
+          <button onclick='Login()' id="btnSubmit" value="Login">Login </button><!--Implementar onClick() con js-->
+          <button  id="btnRegister" value="Register"><a href="Register.html">Register</a></button>
         </div>
-          
       </form>
 
     </div>
