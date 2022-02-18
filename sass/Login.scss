@@ -8,10 +8,22 @@ a{
     color: #000000;
     text-decoration: none;
 }
+button{
+    border-radius: 2px;
+    border:none;
+    display: inline-block;
+}
+#TituloBienvenida{
+    font-family: 'Segoe UI';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
 .dadform {
     border-radius: 10px;
     background-color: #394050;
-    height: 250px;
+    height: 350px;
     width: 250px;
     width: fit-content;
     padding: 50px;
@@ -23,7 +35,7 @@ a{
     top:50%;
     left:50%;
     margin-left: -150px;
-    margin-top: -150px;
+    margin-top: -250px;
       
   }
 .form-login{
