@@ -8,12 +8,7 @@ function Login() {
     }
  
 }
-function pulsar(e) {
-    if (e.keyCode === 13 && !e.shiftKey) {
-        e.preventDefault();
-        Login();
-    }
-}
+
 function validar() {
     //obteniendo el valor que se puso en campo text del formulario
     miCampoTexto = document.getElementById("username").value;
