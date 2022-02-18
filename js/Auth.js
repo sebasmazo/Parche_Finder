@@ -3,7 +3,13 @@ function Login() {
     if(validar()){
         let credenciales = document.getElementsByName("credenciales") //Cambiar a let
         alert("Bienvenido, " + credenciales.item(0).value)
-        sessionStorage.setItem("username",credenciales.item(0).value)
+        if (typeof(Storage) !== "undefined") {
+            sessionStorage.setItem("username",credenciales.item(0).value)
+          } else {
+            // Sorry! No Web Storage support..
+            alert("Este navegador no soporta WebStorage")
+          }
+        
         window.location.href="Browser.html"
     }else{
         alert("Ingrese sus datos para continuar o registrese si aún no lo ha hecho")
@@ -21,9 +27,12 @@ function Register(){
         persona.phone=infoUsuario.item(2).value
         persona.tipoId=infoUsuario.item(3).value
         persona.Id=infoUsuario.item(4).value
-
-        localStorage.setItem("usuario",persona)
-
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("usuario",persona)
+          } else {
+            // Sorry! No Web Storage support..
+            alert("Este navegador no soporta WebStorage")
+          }
         window.location.href="Browser.html"
     }else{
         alert("Por favor ingrese los datos necesarios para su registro");
