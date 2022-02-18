@@ -2,15 +2,26 @@
 function login() {
     if(validar()){
         let credenciales = document.getElementsByName("credenciales") //Cambiar a let
-        alert("Bienvenido, " + credenciales.item(0).value)
         if (typeof(Storage) !== "undefined") {
-            sessionStorage.setItem("username",credenciales.item(0).value)
+            if(localStorage.getItem("usuario")!=null){ //Implementar autenticación con datos en localStorage
+                let username = localStorage.getItem("usuario")
+                let password = localStorage.getItem("password")
+                if(username == credenciales.item(0).value && password == credenciales.item(1).value){
+                    alert("Bienvenido, " + credenciales.item(0).value)
+                    window.location.href="Browser.html"
+                }else{
+                    alert("Datos no encontrados, por favor registrese o verifique sus datos")
+                }
+            }else{
+                alert("datos no encontrados, por favor registrese o verifique sus datos")
+            }
+            
           } else {
             // Sorry! No Web Storage support..
             alert("Este navegador no soporta WebStorage")
           }
         
-        window.location.href="Browser.html"
+        
     }else{
         alert("Ingrese sus datos para continuar o registrese si aún no lo ha hecho")
     }
@@ -18,7 +29,6 @@ function login() {
 function register(){
     if(validarReg()){
         let infoUsuario = document.getElementsByName("credencialesreg")
-        console.log(infoUsuario)
         alert("Bienvenido, " + infoUsuario.item(0).value)
         var persona={};
         persona.username = infoUsuario.item(0).value
@@ -28,7 +38,8 @@ function register(){
         persona.tipoId=infoUsuario.item(3).value
         persona.Id=infoUsuario.item(4).value
         if (typeof(Storage) !== "undefined") {
-            localStorage.setItem("usuario",persona)
+            localStorage.setItem("usuario",persona.username)
+            localStorage.setItem("password",persona.password)
           } else {
             // Sorry! No Web Storage support..
             alert("Este navegador no soporta WebStorage")
