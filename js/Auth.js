@@ -1,5 +1,5 @@
 
-function Login() {
+function login() {
     if(validar()){
         let credenciales = document.getElementsByName("credenciales") //Cambiar a let
         alert("Bienvenido, " + credenciales.item(0).value)
@@ -15,7 +15,7 @@ function Login() {
         alert("Ingrese sus datos para continuar o registrese si aún no lo ha hecho")
     }
 }
-function Register(){
+function register(){
     if(validarReg()){
         let infoUsuario = document.getElementsByName("credencialesreg")
         console.log(infoUsuario)
