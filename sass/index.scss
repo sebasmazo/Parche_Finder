@@ -1,15 +1,21 @@
 // Código de estilos para el header
-$fondo: #8BAAAD;
-$ancho: 514px;
+$fondo: #8baaad;
+$anchoMin: 360px;
+$anchoMax: 428px;
+$bordeEstandar: 1px solid #000;
 .header * {
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .header {
+    border: $bordeEstandar;
     position: fixed;
-    width: $ancho;
-    max-width: $ancho; //Hace falta if para tamaños mayores
-    min-width: 384px; //Hace falta if para tamaños menores
+    width: auto;
+    min-height: 120px;
+    max-width: $anchoMax; //Hace falta if para tamaños mayores
+    min-width: $anchoMin; //Hace falta if para tamaños menores
     align-self: center;
+    align-items: center;
     display: flex;
     z-index: 2;
     background-color: #043565;
@@ -17,28 +23,45 @@ $ancho: 514px;
 .settings-img {
     border-radius: 50%;
     background-color: $fondo;
-    width: 100px;
+    margin-left: 2px;
+    width: 23vw;
+    max-width: 98px;
     padding: 20px;
+    border: $bordeEstandar;
+    box-shadow: rgb(0 0 0 / 38%) 0px 0px 14px 5px;
 }
 .title {
-    width: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-variant: all-small-caps;
+    color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
     align-self: center;
     background-color: $fondo;
-    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-align: center;
     border-radius: 5px;
+    border: $bordeEstandar;
+    box-shadow: rgb(0 0 0 / 38%) 0px 0px 14px 5px;
+    h1 {
+        font-size: clamp(16px, 8vw, 36px);
+    }
 }
 .user-img {
+    width: 23vw;
+    max-width: 98px;
     border-radius: 50%;
     background-color: $fondo;
-    width: 100px;
     padding: 20px;
+    border: $bordeEstandar;
+    box-shadow: rgb(0 0 0 / 38%) 0px 0px 14px 5px;
+    margin-right: 2px;
 }
 // Fin de código de estilos para el header
 .container {
+    background-color: $fondo;
     margin-top: 5px;
+    max-width: $anchoMax;
     height: auto;
     width: auto;
     top: 115px;
@@ -48,25 +71,39 @@ $ancho: 514px;
     padding: 0;
 }
 .parche {
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 38%) 0px 0px 14px 5px;
     display: flex;
-    max-width: $ancho; //Hace falta if para tamaños mayores
-    min-width: 384px; //Hace falta if para tamaños menores
-    width: 512px;
-    margin: 2px;
-    border: 1px solid #000;
+    height: fit-content;
+    max-width: $anchoMax; //Hace falta if para tamaños mayores
+    min-width: $anchoMin; //Hace falta if para tamaños menores
+    width: auto;
+    border: $bordeEstandar;
     background-color: $fondo;
     // &:hover{
     //     transform: scale(1.1); Al ser movil esta escala se debe hacer en caso de hold; browserscript.js
     // }
+    h1 {
+        font-size: 28px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        color: #000;
+    }
     * {
-        margin: 5px;
+        margin: 1px;
         transition: opacity 0.3s linear;
     }
     img {
+        border-radius: 5px;
         left: 20px;
-        width: 350px;
-        height: 150px;
+        width: 170px;
+        height: 120px;
+        object-fit: cover;
         transition: all 0.5s linear;
+        z-index: 1;
     }
     p {
         text-overflow: ellipsis;
@@ -79,9 +116,15 @@ $ancho: 514px;
     }
     .data {
         h4 {
+            width: clamp(75px, 80px, 90px);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
             margin: 10px 0px 20px 0px;
             text-align: center;
-            border: 1px solid #000;
+            border: $bordeEstandar;
         }
     }
 }

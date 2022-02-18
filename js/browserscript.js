@@ -17,19 +17,22 @@ for (let i = 0; i < parcherec.length; i++) {
             for (let j = 1; j < parche[i].children.length; j++) {
                 parche[i].children[j].style.opacity = 0;
             }
-            parche[i].children[0].style.transform = "scale(1.2) translate(130px , 3px)";
+            parche[i].children[0].style.transform = "scale(1.05) translate(130px , 1px)";
+            parche[i].children[0].style.boxShadow = "rgb(0 0 0 / 38%) 0px 0px 14px 5px";
         }
         else if (ev.type == "pressup") {
             for (let j = 1; j < parche[i].children.length; j++) {
                 parche[i].children[j].style.opacity = 1;
             }
             parche[i].children[0].style.transform = "scale(1.0)";
+            parche[i].children[0].style.boxShadow = "none";
         }
         else {
             for (let j = 1; j < parche[i].children.length; j++) {
                 parche[i].children[j].style.opacity = 1;
             }
             parche[i].children[0].style.transform = "scale(1.0)";
+            parche[i].children[0].style.boxShadow = "none";
         }
     });
 }
