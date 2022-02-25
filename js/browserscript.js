@@ -26,6 +26,8 @@ for (let i = 0; i < parcherec.length; i++) {
             }
             parche[i].children[0].style.transform = "scale(1.0)";
             parche[i].children[0].style.boxShadow = "none";
+            hidedesp();
+            btn.value = "OFF"
         }
         else {
             for (let j = 1; j < parche[i].children.length; j++) {
@@ -33,11 +35,80 @@ for (let i = 0; i < parcherec.length; i++) {
             }
             parche[i].children[0].style.transform = "scale(1.0)";
             parche[i].children[0].style.boxShadow = "none";
+            hidedesp();
+            btn.value = "OFF"
         }
     });
 }
-// parcherec.on("panleft panright tap press", function (ev) {
-// 	if (ev.type == "tap") {
-// 		parche.style.transform = "scale(1.1)";
-// 	}
-// });
+
+
+var btn = document.querySelector(".deploy");
+var desplegado = document.querySelector(".containerDesp");
+desplegado.value="OFF"
+btn.value = "OFF";
+deployrec = new Hammer(btn);
+deployrec.on("panleft panup pandown panright tap press pressup", function (ev) {
+    if (ev.type == "tap") {
+        if(btn.value == "OFF") {
+            btn.value = "ON"
+            showdesp();
+        }
+        else if (btn.value == "ON")
+        {
+            btn.value = "OFF"
+            hidedesp();
+        }  
+    }
+});
+
+
+var replegado = document.querySelector(".replegado");
+var desplegar = document.querySelector(".desplegado");
+desplegarrec = new Hammer(desplegar);
+desplegarrec.on("panleft panup pandown panright tap press pressup", function (ev) {
+    if (ev.type == "tap") {
+        if(desplegado.value == "OFF") {
+            desplegado.value = "ON"
+            showreplegado();
+        }
+        else if (desplegado.value == "ON")
+        {
+            desplegado.value = "OFF"
+            hidereplegado();
+        }  
+    }
+});
+
+
+function showreplegado() {
+    replegado.className = "repshowed"
+    desplegar.style.display ="none"
+}
+function hidereplegado() {
+    replegado.className = "replegado"
+    desplegar.style.display ="inherit"
+}
+function showdesp() {
+    desplegado.className = "showedcontainer"
+}
+function hidedesp() {
+    desplegado.className = "containerDesp"
+    hidereplegado();
+    desplegado.value = "OFF"
+}
+
+//header touch exit
+var header = document.querySelector(".header");
+headerrec = new Hammer(header);
+headerrec.on("panleft panup pandown panright tap press pressup", function (ev) {
+    hidedesp();
+    btn.value = "OFF"
+});   
+//crear parche touch exit
+var crearparche = document.querySelector(".crear");
+crearpacherrec = new Hammer(crearparche);
+crearpacherrec.on("panleft panup pandown panright tap press pressup", function (ev) {
+    hidedesp();
+    btn.value = "OFF"
+    //funcion para ir a crear parche
+});   

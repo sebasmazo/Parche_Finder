@@ -138,10 +138,39 @@
   align-items: center;
   -webkit-box-align: center;
 }
+.btndesplegable .showedcontainer {
+  border: 1px solid #000;
+  background-color: #043565;
+  height: 180px;
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  left: -28px;
+}
+.btndesplegable .showedcontainer div {
+  height: 90px;
+  width: 200px;
+  border: 1px solid #000;
+}
+.btndesplegable .showedcontainer .unirse {
+  position: relative;
+}
+.btndesplegable .showedcontainer .desplegado,
+.btndesplegable .showedcontainer .replegado {
+  position: absolute;
+}
+.btndesplegable .showedcontainer .crear {
+  position: absolute;
+}
+.btndesplegable .showedcontainer div h1 {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
 .btndesplegable .containerDesp {
   border: 1px solid #000;
   background-color: #043565;
-  height: 140px;
+  height: 180px;
   width: 200px;
   display: none;
   position: absolute;
@@ -149,7 +178,7 @@
   left: -28px;
 }
 .btndesplegable .containerDesp div {
-  height: 70px;
+  height: 90px;
   width: 200px;
   border: 1px solid #000;
 }
@@ -179,4 +208,17 @@
   padding: 5px;
   margin-right: 5px;
   left: 165px;
+}
+.btndesplegable .replegado {
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 14px 5px;
+}
+.btndesplegable .replegado label {
+  color: #000;
+}
+.btndesplegable .repshowed {
+  display: grid;
+}
+.btndesplegable .repshowed label {
+  color: #000;
 }
