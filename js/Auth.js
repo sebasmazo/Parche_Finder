@@ -38,12 +38,13 @@ function register(){
         persona.tipoId=infoUsuario.item(3).value
         persona.Id=infoUsuario.item(4).value
         if (typeof(Storage) !== "undefined") {
-            localStorage.setItem("usuario",persona.username)
-            localStorage.setItem("password",persona.password)
-          } else {
+            localStorage.user = JSON.stringify({username: persona.username, email: persona.email, password: persona.password, Id: persona.Id})
+            let user = JSON.parse(localStorage.user)
+            alert(user.username)
+        } else {
             // Sorry! No Web Storage support..
             alert("Este navegador no soporta WebStorage")
-          }
+        }
         window.location.href="Browser.html"
     }else{
         alert("Por favor ingrese los datos necesarios para su registro");
