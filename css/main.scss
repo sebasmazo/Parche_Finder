@@ -6,7 +6,8 @@
   box-sizing: inherit;
 }
 
-body{
+.Fondo_Perfil{
+    
     background: url(../imgs/fondo_perfil.jpg);
 }
 .foto{
@@ -25,7 +26,7 @@ body{
     padding: 40px;
 }
 .contacto{
-    color:white;
+    color:black;
     padding: 10px;
     margin: 2px;
     list-style: none;
@@ -37,10 +38,18 @@ body{
     margin: 10px;
 }
 .sobre_mi{
-    color:white;
-    text-align:center;
-    height: 130px;
+    border-style: solid double;
+    background-color:#80DBFF;
+    color:black;
+    height: 200px;
     padding: 30px;
+}
+.sobre_mi h1{
+    text-align:center;
+}
+
+.sobre_mi p{
+    font-weight:bold;
 }
 .icono{
     width: 16px;
@@ -57,10 +66,13 @@ body{
 }
 
 .Galeria h1{
+    background-color: #CCEFA7;
     text-align: center;
 }
 
 .galeria{
+    border-style: solid double;
+    background-color: #CCEFA7;
     width: 90%;
     margin:auto;
     list-style:none;
@@ -151,6 +163,8 @@ body{
 
 //Terminan los Perfiles
 
+//Inicia los settings
+
 .body Settings{
     background:url(../imgs/Fondo_Settings.jpg);
     background-size:cover;
@@ -162,7 +176,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     position:absolute;
-    color:#fff;
+    color:black;
 }
 
 .Opciones h1{
@@ -195,8 +209,8 @@ body{
 .fotito{
     margin:50px;
     background-color: red;
-    width: 60px;
-    height: 60px;
+    width: 106px;
+    height: 106px;
     border-radius: 50%;
     position: inherit ;
 }
@@ -213,3 +227,54 @@ body{
 
 //Termina Settings, Inicia Credits
 
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color:Black;
+}
+
+.about img{
+    margin:100px;
+    height:auto;
+    width: 420px;
+}
+.about sobre_nosotros_text{
+    width:550 px;
+
+}
+
+.Begining{
+    width:1130px;
+    max-width:95px;
+    margin:0 auto;
+    display:flex;
+    align-items:left;
+    justify-content:space-around;
+}
+
+.Nombre_autores{
+    text-align:center;
+}
+
+//Terminos y Condiciones
+.Terminos{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.btn-descarga{
+    display:block;
+    width:80px;
+    height:80px;
+    background: black;
+    border-radius:50px;
+    text-align:center;
+    line-height:80px;
+    font-size:30px;
+    color:#15be63;
+    transition:all 400ms ease-out;
+}
