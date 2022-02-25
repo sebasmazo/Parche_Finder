@@ -16,10 +16,10 @@ function login() {
                 alert("datos no encontrados, por favor registrese o verifique sus datos")
             }
             
-          } else {
+        } else {
             // Sorry! No Web Storage support..
             alert("Este navegador no soporta WebStorage")
-          }
+        }
         
         
     }else{
@@ -40,7 +40,6 @@ function register(){
         if (typeof(Storage) !== "undefined") {
             localStorage.user = JSON.stringify({username: persona.username, email: persona.email, password: persona.password, Id: persona.Id})
             let user = JSON.parse(localStorage.user)
-            alert(user.username)
         } else {
             // Sorry! No Web Storage support..
             alert("Este navegador no soporta WebStorage")
