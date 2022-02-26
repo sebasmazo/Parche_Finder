@@ -241,14 +241,28 @@
 .maincontParche {
   max-width: 428px;
   min-width: 360px;
-  background-color: #8baaad;
+  background-color: #1c658c;
   border: 1px solid #000;
 }
-
-.Galeria h1 {
+.maincontParche h1 {
   color: #000;
-  font-size: 50px;
+  font-size: 25px;
+  font-weight: bolder;
   text-align: center;
+}
+.maincontParche .codigoAuto {
+  display: flex;
+}
+.maincontParche .codigoAuto * {
+  align-self: baseline;
+  margin: 2px;
+  color: #000;
+}
+.maincontParche .codigoAuto h5 {
+  font-weight: lighter;
+}
+.maincontParche h5 {
+  color: #000;
 }
 
 .galeria {
@@ -262,6 +276,7 @@
   text-align: center;
   border-radius: 1px;
   margin: 5px;
+  box-shadow: inset rgba(0, 0, 0, 0.38) 0px 0px 20px 9px;
 }
 
 .galeria li {
@@ -269,9 +284,9 @@
 }
 
 .galeria img {
-  width: 150px;
-  height: 100px;
-  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
   border-radius: 2px;
 }
 
@@ -282,7 +297,7 @@
 .Modales:target {
   display: block;
   position: fixed;
-  background: #043565;
+  background: #1c658c;
   top: 0;
   left: 0;
   width: 100%;
@@ -290,7 +305,7 @@
 }
 
 .Modales h3 {
-  color: white;
+  color: black;
   font-size: 30px;
   text-align: center;
   margin: 15px 0;
@@ -305,7 +320,7 @@
 }
 
 .imagen a {
-  color: white;
+  color: black;
   font-size: 40px;
   text-decoration: none;
   margin: 0 10px;
@@ -327,14 +342,14 @@
 
 .Cerrar {
   display: block;
-  background-color: white;
+  background-color: black;
   width: 30px;
   height: 30px;
   margin: 15px auto;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  color: black;
+  color: white;
   padding: 5px;
   border-radius: 50%;
   line-height: 25px;
@@ -349,6 +364,8 @@
   display: flex;
   color: #000;
   margin: 2px;
+  background-color: #1c658c;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
 }
 .data .smalldata div {
   padding: 5px;
@@ -359,25 +376,44 @@
 .data .smalldata div h3 {
   font-size: 20px;
 }
+.data .botones {
+  display: flex;
+  align-self: center;
+  background-color: #1c658c;
+  color: #000;
+  margin: 5px 2px 5px 2px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+  justify-content: center;
+}
+.data .botones button {
+  margin: 5px;
+}
 .data .detail {
-  margin: 20px 5px 20px 5px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  color: #000;
+  margin: 2px;
+  background-color: #1c658c;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
 }
 .data .detail h4 {
   color: #000;
   font-weight: bold;
 }
 .data .tags {
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin: 20px 5px 20px 5px;
+  color: #000;
   margin: 2px;
+  background-color: #1c658c;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
 }
 .data .tags h4 {
   color: #000;
   font-weight: bold;
-}
-
-.unirme {
-  align-self: center;
-  background-color: #043565;
-  color: #000;
 }
 
 /*# sourceMappingURL=index.css.map */
