@@ -82,7 +82,7 @@
   background-color: #8baaad;
 }
 .parche h1 {
-  font-size: 28px;
+  font-size: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -97,8 +97,8 @@
 .parche img {
   border-radius: 5px;
   left: 20px;
-  width: 170px;
-  height: 120px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
   transition: all 0.5s linear;
   z-index: 1;
@@ -133,7 +133,7 @@
   display: -webkit-inline-box;
   position: fixed;
   bottom: 50px;
-  left: 185px;
+  left: min(35%, 160px, 170px);
   z-index: 2;
   align-items: center;
   -webkit-box-align: center;
