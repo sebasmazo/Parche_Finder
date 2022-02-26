@@ -86,12 +86,18 @@ function showreplegado() {
 }
 function hidereplegado() {
     replegado.className = "replegado"
-    desplegar.style.display ="inherit"
+    desplegar.style.display ="grid"
 }
 function showdesp() {
+    btn.style.transform = "rotate(90deg)"
+    btn.src = "https://e7.pngegg.com/pngimages/1023/763/png-clipart-arrow-font-awesome-computer-icons-back-to-back-angle-logo.png"
     desplegado.className = "showedcontainer"
+    desplegado.style.transform = "scale(1.0)" 
 }
 function hidedesp() {
+    btn.style.transform = "rotate(-90deg)"
+    btn.src = "https://www.freepnglogos.com/uploads/plus-icon/plus-icon-plus-svg-png-icon-download-1.png"
+    desplegado.style.transform = "scale(0)"
     desplegado.className = "containerDesp"
     hidereplegado();
     desplegado.value = "OFF"
