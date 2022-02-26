@@ -249,6 +249,7 @@
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
+  align-self: center;
 }
 .maincontParche .codigoAuto {
   display: flex;
@@ -317,6 +318,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 20px;
+}
+.imagen img {
+  box-shadow: inset #043565 0px 0px 20px 20px;
 }
 
 .imagen a {

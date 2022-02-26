@@ -345,9 +345,12 @@ $bordeEstandar: 1px solid #000;
     width: 100%;
     height: 50%;
     display: flex;
-
     justify-content: center;
     align-items: center;
+    box-shadow: rgb(0 0 0 / 40%) 0px 0px 20px 20px;
+    img{
+        box-shadow: inset $fondoOscuro 0px 0px 20px 20px;
+    }
 }
 
 .imagen a {
