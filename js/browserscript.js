@@ -1,10 +1,9 @@
 // document.open();
 for (let i = 0; i < 10; i++) {
-    document.querySelector('.container').innerHTML += '<div class="parche idparche"> <img class="parcheimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" alt=""> <div class="detail"> <h1>ParcheTitle' + i + '</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet, error aperiam corrupti saepe, doloribus officiis, praesentium explicabo quasi unde optio reiciendis hic illo necessitatibus alias culpa eum voluptate illum.</p> </div> <div class="data"> <h4 class="personas">0/20</h4> <h4 class="costo">100.000$</h4> <h4 class="ubicación">La gloria</h4> </div> </div>'
+    document.querySelector('.container').innerHTML += '<div class="parche idparche'+i+'"> <img class="parcheimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" alt=""> <div class="detail"> <h1>ParcheTitle' + i + '</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet, error aperiam corrupti saepe, doloribus officiis, praesentium explicabo quasi unde optio reiciendis hic illo necessitatibus alias culpa eum voluptate illum.</p> </div> <div class="data"> <h4 class="personas">0/20</h4> <h4 class="costo">100.000$</h4> <h4 class="ubicación">La gloria</h4> </div> </div>'
     // document.write('<div class="parche idparche"> <img class="parcheimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" alt=""> <div class="detail"> <h1>ParcheTitle' + i + '</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet, error aperiam corrupti saepe, doloribus officiis, praesentium explicabo quasi unde optio reiciendis hic illo necessitatibus alias culpa eum voluptate illum.</p> </div> <div class="data"> <h2 class="personas"><small>0/20</small></h2> <h2 class="costo"><small>100.000$</small></h2> <h2 class="ubicación"><small>La gloria</small></h2> </div> </div>');
 }
 // document.close();
-
 
 var parche = document.querySelectorAll(".parche");
 var parcherec = [];
@@ -28,6 +27,10 @@ for (let i = 0; i < parcherec.length; i++) {
             parche[i].children[0].style.boxShadow = "none";
             hidedesp();
             btn.value = "OFF"
+        }
+        else if (ev.type == "tap"){
+            alert("Vamos al parche #:"+i+" clase: "+parche[i].className); //funcionalidad de navegación
+            location.replace("./detailparche.html")
         }
         else {
             for (let j = 1; j < parche[i].children.length; j++) {
