@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCHE BROWSER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="settings">
+            <img class="settings-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png"
+                alt="Configuración">
+        </div>
+        <div class="title">
+            <h1>Parche Browser</h1>
+        </div>
+        <div class="user">
+            <img class="user-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"
+                alt="Usuario">
+        </div>
+    </div>
+    <!-- Header -->
+    <!-- Browser -->
+    <div class="container">
+        
+        <div class="btndesplegable">
+            <div class="containerDesp">
+                <div class="unirse">
+                    <div class="desplegado btn">
+                        <h1>Unirse a parche</h1> 
+                    </div>
+                    <div class="replegado btn">
+                        <label for="codigo" id="codigo">Codigo: </label>
+                        <input type="text" id="codigo-parche" name="codigo">
+                        <input type="submit" value="Enviar" onclick="getId(); window.location.href='./detailparche.html'"> <!--Debe hacer un sessionStorage.setItem(parcheid,"Codigo del parche")-->
+                    </div>
+                </div>
+                <div class="crear btn">
+                    <h1>Crear parche </h1>
+                </div>
+            </div>
+            <img class="btn imgbtn deploy" src="https://www.freepnglogos.com/uploads/plus-icon/plus-icon-plus-svg-png-icon-download-1.png" alt="">
+        </div>
+    </div>
+    <!-- Browser -->
+    <script src="js/headerscript.js"></script>
+    <script src="js/browserscript.js"></script>
+</body>
+
+</html>
