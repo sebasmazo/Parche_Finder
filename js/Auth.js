@@ -8,7 +8,7 @@ function login() {
                 let password = localStorage.getItem("password")
                 if(username == credenciales.item(0).value && password == credenciales.item(1).value){
                     alert("Bienvenido, " + credenciales.item(0).value)
-                    window.location.href="Browser.html"
+                    window.location.href="./Browser.html"
                 }else{
                     alert("Datos no encontrados, por favor registrese o verifique sus datos")
                 }
