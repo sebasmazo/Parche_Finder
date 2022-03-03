@@ -18,7 +18,6 @@ joinrec.on("panleft panright tap press", function (ev) {
 });
 
 window.onload = function(){
-	
 	document.getElementById("codigoParche").innerHTML = sessionStorage.getItem('parcheid')
 }
 

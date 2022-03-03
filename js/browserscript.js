@@ -121,3 +121,11 @@ crearpacherrec.on("panleft panup pandown panright tap press pressup", function (
     btn.value = "OFF"
     //funcion para ir a crear parche
 });   
+var idaux;
+function getId() {
+    idaux = document.getElementById("codigo-parche").value
+    setId(idaux)    
+}
+function setId(id){
+    sessionStorage.setItem("parcheid",id)
+}
