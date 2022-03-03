@@ -230,7 +230,7 @@
 .about{
     width: 100%;
     padding: 78px 0px;
-    background-color:Black;
+    background-color:grey;
 }
 
 .about img{
@@ -238,10 +238,13 @@
     height:auto;
     width: 420px;
 }
-.about sobre_nosotros_text{
-    width:550 px;
 
-}
+.sobre_nosotros_text {
+  
+    border: 5px ;
+    border-radius: 10%;
+   
+  }
 
 .Begining{
     width:1130px;
