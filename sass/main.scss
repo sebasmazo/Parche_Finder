@@ -1,3 +1,65 @@
+@use "sass:color";
+body{
+    
+    background-image: url(https://www.medellin.gov.co/irj/go/km/docs/galerias/Imagenes/Galer%C3%ADa%20d%C3%ADa%20a%20d%C3%ADa%202021/20210813-reactivacion-economica-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #394050;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+button{
+    border-radius: 2px;
+    border:none;
+    display: inline-block;
+}
+#TituloBienvenida{
+    font-family: 'Segoe UI';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+.dadform {
+    border-radius: 10px;
+    background-color: #394050;
+    height: 350px;
+    width: 250px;
+    width: fit-content;
+    padding: 50px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -150px;
+    margin-top: -250px;
+}
+.form-login{
+    text-align: center;
+    color: whitesmoke;
+}
+.createparche{
+    text-align: center;
+    color: whitesmoke;
+    
+}
+.submits{
+    display: inline;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+#btnSubmit{
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: auto;
 //Empieza Perfil
 
 *,
@@ -273,8 +335,6 @@
     justify-content:center;
     align-items:center;
 }
-
-
 .btn-descarga{
     display:block;
     width:80px;
@@ -286,4 +346,5 @@
     font-size:30px;
     color:white;
     transition:all 400ms ease-out;
+    }
 }
