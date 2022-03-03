@@ -19,8 +19,8 @@
     <div class ="Opciones">
 
         <h1>Opciones</h1>
-        <form action="#" method="post">
-        <center><p>Tipo Perfil</p></center>
+        <div class="Form">
+            <center><p>Tipo Perfil</p></center>
         <center><select> 
             <option value="1">Público</option> 
             <option value="2">Privado</option> 
@@ -31,19 +31,20 @@
         <center><p>Contraseña</p></center>
         <input type="Contraseña" name ="Contraseña" placeholder ="Password">
         -->
-        <center><button type="submit">Aplicar</button></center>
+        <center><button type="submit" onclick="window.location.href='./Credits.html'">Creditos</button></center>
 
         <!-- AQUI SE DEBE HACER LA NAVEGACION, ESTE BOTON RETORNARA AL BROWSER-->
         
-        <center><button class="btn btn-primary regresar">Regresar</button></center>
-        </a>
-        </form>   
+        <center><button class="back" onclick="window.location.href='./Browser.html'">Regresar</button></center>
+        </a>  
+        </div>
+        
     </div>
     <div class ="Terminos">
         
         <a href="../Parche_Finder/Terminos_Condiciones.txt" download="Terminos Y Terminos_Condiciones" title="Descargar Terminos y condiciones">Terminos_Condiciones
         </a>
     </div>
-    <script src="js/SettingsScript.js"></script>
+    
 </body>
 </html>
