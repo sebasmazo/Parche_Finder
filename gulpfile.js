@@ -22,7 +22,6 @@ function css() {
   .pipe(rename('main.min.css'))
   .pipe(dest("./css"))
 }
-exports.JS = JS;
 exports.css = css;
 exports.default = ()=>{};
 
