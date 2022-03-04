@@ -162,38 +162,45 @@
 .body Settings {
   background: url(../imgs/Fondo_Settings.jpg);
   background-size: cover;
+  height: 300px;
+  background-color: #EEE;
+  position: relative;
+}
+
+.Imagen {
+  display: flex;
+  justify-content: center;
+  height: 150px;
 }
 
 .Opciones {
-  width: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
   color: black;
+  line-height: 150px;
+  text-align: center;
 }
 
 .Opciones h1 {
   text-align: center;
   font-size: 40px;
-  margin: 40px 0;
-  text-transform: uppercase;
+  margin: 10px 0;
 }
 
 .Opciones select {
   color: black;
+  justify-content: center;
 }
 
 .Opciones select option {
   color: black;
   font-size: 16px;
   width: 100%;
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 
 .Opciones p {
-  margin: 15px 0;
+  margin: 1px 0;
   font-size: 20px;
+  text-align: center;
 }
 
 .Opciones input {
@@ -208,17 +215,16 @@
   width: 106px;
   height: 106px;
   border-radius: 50%;
-  position: inherit;
+  justify-content: center;
 }
 
-.Opciones button {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0;
-  padding: 10px 15px;
-  width: 120px;
-  border-radius: 5px;
-  color: black;
+.Botones_Setting {
+  display: flex;
+  justify-content: center;
+}
+
+.Perfil_Tipo {
+  align-items: center;
 }
 
 .about {
@@ -234,10 +240,8 @@
 }
 
 .sobre_nosotros_text {
-  
-  border: 5px ;
+  border: 5px;
   border-radius: 10%;
- 
 }
 
 .Begining {
