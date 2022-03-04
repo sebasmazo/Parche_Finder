@@ -3,9 +3,11 @@ function login() {
     if(validar()){
         let credenciales = document.getElementsByName("credenciales") //Cambiar a let
         if (typeof(Storage) !== "undefined") {
-            if(localStorage.getItem("usuario")!=null){ //Implementar autenticación con datos en localStorage
-                let username = localStorage.getItem("usuario")
-                let password = localStorage.getItem("password")
+            if(localStorage.getItem("user")!=null){ //Implementar autenticación con datos en localStorage
+                let credenciales1 = JSON.parse(localStorage.getItem("user"))
+                console.log(credenciales1)
+                let username = credenciales1['username']
+                let password = credenciales1['password']
                 if(username == credenciales.item(0).value && password == credenciales.item(1).value){
                     alert("Bienvenido, " + credenciales.item(0).value)
                     window.location.href="./Browser.html"

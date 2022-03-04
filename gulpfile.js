@@ -3,7 +3,7 @@ const rename = require('gulp-rename');
 const sass =  require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify-es');
+const uglify = require('gulp-uglify-es').default;
 
 sass.compiler = require('dart-sass');
 
