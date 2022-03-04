@@ -130,3 +130,22 @@ function getId() {
 function setId(id){
     sessionStorage.setItem("parcheid",id)
 }
+function generateRandomString(num) {
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result1= Math.random().toString(36).substring(0,num);       
+
+    return result1;
+}
+var idparches=[""]
+function addParcheList(id) {
+    if(localStorage.getItem('idParches') != null){
+        idparches = JSON.parse(localStorage.getItem('idParches'))
+        idparches.push(id)
+        localStorage.setItem('idParches',JSON.stringify(idparches))
+        alert("Te has unido exitosamente")
+    }else{
+        idparches.push(id)
+        localStorage.setItem('idParches',JSON.stringify(idparches))
+        alert("Te has unido exitosamente")
+    }
+}

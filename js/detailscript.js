@@ -5,7 +5,7 @@ var joinrec = new Hammer(join);
 joinrec.on("panleft panright tap press", function (ev) {
 	if (ev.type == "tap") {
 		if(localStorage.getItem('idParches') != null){
-			idParches = JSON.parse(localStorage.getItem('idParches'))
+			idparches = JSON.parse(localStorage.getItem('idParches'))
 			idparches.push(sessionStorage.getItem("parcheid"))
 			localStorage.setItem('idParches',JSON.stringify(idparches))
 			alert("Te has unido exitosamente")
@@ -27,3 +27,5 @@ cancelrec.on("panleft panright tap press", function (ev) {
 		window.location.href="./Browser.html" //funcionalidad para cambiar de vista a browser
 	}
 });
+
+
