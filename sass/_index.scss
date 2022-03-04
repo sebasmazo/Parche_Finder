@@ -1,0 +1,399 @@
+.header * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .header {
+    border: 1px solid #000;
+    position: fixed;
+    width: auto;
+    min-height: 120px;
+    max-width: 428px;
+    min-width: 360px;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+    background-color: #043565;
+  }
+  
+  .settings-img {
+    border-radius: 50%;
+    background-color: #8baaad;
+    margin-left: 2px;
+    width: 23vw;
+    max-width: 98px;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 14px 5px;
+  }
+  
+  .title {
+    font-variant: all-small-caps;
+    color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: center;
+    background-color: #8baaad;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 14px 5px;
+  }
+  .title h1 {
+    font-size: clamp(16px, 8vw, 36px);
+  }
+  
+  .user-img {
+    width: 23vw;
+    max-width: 98px;
+    border-radius: 50%;
+    background-color: #8baaad;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 14px 5px;
+    margin-right: 2px;
+  }
+  
+  .container {
+    background-color: #8baaad;
+    margin-top: 5px;
+    max-width: 428px;
+    height: auto;
+    width: auto;
+    top: 115px;
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .parche {
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 14px 5px;
+    display: flex;
+    height: fit-content;
+    max-width: 428px;
+    min-width: 360px;
+    width: auto;
+    border: 1px solid #000;
+    background-color: #8baaad;
+  }
+  .parche h1 {
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #000;
+  }
+  .parche * {
+    margin: 1px;
+    transition: opacity 0.3s linear;
+  }
+  .parche img {
+    border-radius: 5px;
+    left: 20px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 0.5s linear;
+    z-index: 1;
+  }
+  .parche p {
+    text-overflow: ellipsis;
+    max-width: 200px;
+    max-height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .parche .data {
+    text-align: -webkit-right;
+    margin-right: 2px;
+  }
+  .parche .data h4 {
+    padding: 1px;
+    width: fit-content;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    border: 1px solid #000;
+  }
+  
+  .btndesplegable {
+    display: -webkit-inline-box;
+    position: fixed;
+    bottom: 50px;
+    left: min(35%, 160px, 170px);
+    z-index: 2;
+    align-items: center;
+    -webkit-box-align: center;
+  }
+  .btndesplegable .showedcontainer {
+    border: 1px solid #000;
+    background-color: #1c658c;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    height: 180px;
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: -28px;
+  }
+  .btndesplegable .showedcontainer div {
+    height: 90px;
+    width: 200px;
+    border: 1px solid #000;
+  }
+  .btndesplegable .showedcontainer .unirse {
+    position: relative;
+  }
+  .btndesplegable .showedcontainer .desplegado,
+  .btndesplegable .showedcontainer .replegado {
+    position: absolute;
+  }
+  .btndesplegable .showedcontainer .crear {
+    position: absolute;
+  }
+  .btndesplegable .showedcontainer div h1 {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+  }
+  .btndesplegable .containerDesp {
+    transform: scale(0);
+    position: absolute;
+  }
+  .btndesplegable .imgbtn {
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
+    width: 55px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background-color: #1c658c;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 5px 5px;
+    padding: 5px;
+    margin-right: 5px;
+    left: 165px;
+    transition: all 0.1s linear;
+  }
+  .btndesplegable .replegado {
+    transition: all 0.3s linear;
+    transform: scale(0);
+  }
+  .btndesplegable .repshowed {
+    transition: all 0.3s linear;
+    display: grid;
+  }
+  .btndesplegable .repshowed label {
+    color: #000;
+    text-align: center;
+  }
+  .btndesplegable .repshowed input {
+    border: 1px solid #000;
+    background: #d8d2cb;
+    color: #000;
+  }
+  .btndesplegable .repshowed input:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+    border: 1px solid #000;
+    box-shadow: inset 0px 0px 2px 1px #043565 !important;
+  }
+  
+  .maincontParche {
+    max-width: 428px;
+    min-width: 360px;
+    background-color: #1c658c;
+    border: 1px solid #000;
+  }
+  .maincontParche h1 {
+    color: #000;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    align-self: center;
+  }
+  .maincontParche .codigoAuto {
+    display: flex;
+  }
+  .maincontParche .codigoAuto * {
+    align-self: baseline;
+    margin: 2px;
+    color: #000;
+  }
+  .maincontParche .codigoAuto h5 {
+    font-weight: lighter;
+  }
+  .maincontParche h5 {
+    color: #000;
+  }
+  
+  .galeria {
+    border: 1px solid #000;
+    background-color: #8baaad;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 1px;
+    margin: 5px;
+    box-shadow: inset rgba(0, 0, 0, 0.38) 0px 0px 20px 9px;
+  }
+  
+  .galeria li {
+    margin: 5px;
+  }
+  
+  .galeria img {
+    width: 130px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  
+  .Modales {
+    display: none;
+  }
+  
+  .Modales:target {
+    display: block;
+    position: fixed;
+    background: #1c658c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Modales h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 20px;
+  }
+  .imagen img {
+    box-shadow: inset #043565 0px 0px 20px 20px;
+  }
+  
+  .imagen a {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+  }
+  
+  .imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 2px solid;
+    box-sizing: border-box;
+  }
+  
+  .Cerrar {
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+  }
+  
+  .data {
+    margin: 3px;
+  }
+  .data .smalldata {
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: flex;
+    color: #000;
+    margin: 2px;
+    background-color: #1c658c;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+  }
+  .data .smalldata div {
+    padding: 5px;
+    align-self: center;
+    text-align: center;
+    width: 33.3333333333%;
+  }
+  .data .smalldata div h3 {
+    font-size: 20px;
+  }
+  .data .botones {
+    display: flex;
+    align-self: center;
+    background-color: #1c658c;
+    color: #000;
+    margin: 5px 2px 5px 2px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+    justify-content: center;
+  }
+  .data .botones button {
+    margin: 5px;
+  }
+  .data .detail {
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #000;
+    margin: 2px;
+    background-color: #1c658c;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+  }
+  a{
+      color: #000000;
+      text-decoration: none;
+  }
+  .data .detail h4 {
+    color: #000;
+    font-weight: bold;
+  }
+  .data .tags {
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin: 20px 5px 20px 5px;
+    color: #000;
+    margin: 2px;
+    background-color: #1c658c;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 0px 35px 5px;
+  }
+  .data .tags h4 {
+    color: #000;
+    font-weight: bold;
+  }
+  
