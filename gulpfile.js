@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify-es');
 
 sass.compiler = require('dart-sass');
 
-function js() { //Usar al final
+function JS() { //Usar al final
   return src(['./js/**.js'])
   .pipe(concat("main.min.js"))
   .pipe(uglify())
