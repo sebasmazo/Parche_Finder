@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 9c07366 (Commit reversible)
 // document.open();
 for (let i = 0; i < 10; i++) {
     document.querySelector('.container').innerHTML += '<div class="parche idparche'+i+'"> <img class="parcheimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" alt=""> <div class="detail"> <h1>ParcheTitle' + i + '</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet, error aperiam corrupti saepe, doloribus officiis, praesentium explicabo quasi unde optio reiciendis hic illo necessitatibus alias culpa eum voluptate illum.</p> </div> <div class="data"> <h4 class="personas">0/20</h4> <h4 class="costo">100.000$</h4> <h4 class="ubicación">La gloria</h4> </div> </div>'
@@ -129,6 +132,7 @@ function getId() {
 }
 function setId(id){
     sessionStorage.setItem("parcheid",id)
+<<<<<<< HEAD
 }
 function generateRandomString(num) {
     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -149,3 +153,6 @@ function addParcheList(id) {
         alert("Te has unido exitosamente")
     }
 }
+=======
+}
+>>>>>>> parent of 9c07366 (Commit reversible)
