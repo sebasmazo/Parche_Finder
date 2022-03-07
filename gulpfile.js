@@ -8,7 +8,7 @@ const uglify = require('gulp-uglify-es').default;
 sass.compiler = require('dart-sass');
 
 function JS() { //Usar al final
-  return src(['./js/Auth.js'])
+  return src(['./js/headerscript.js'])
   .pipe(uglify())
   .pipe(dest('./jsmin'))
   

@@ -1,0 +1,1 @@
+var settings=document.querySelector(".settings"),user=document.querySelector(".user"),settingsrec=new Hammer(settings);settingsrec.on("panleft panright tap press",(function(e){"tap"==e.type&&(window.location.href="./Settings.html")}));var userrec=new Hammer(user);userrec.on("panleft panright tap press",(function(e){"tap"==e.type&&(window.location.href="./Perfil.html")}));

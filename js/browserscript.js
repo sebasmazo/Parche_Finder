@@ -30,7 +30,8 @@ for (let i = 0; i < parcherec.length; i++) {
             btn.value = "OFF"
         }
         else if (ev.type == "tap"){
-            alert("Vamos al parche #:"+i+" clase: "+parche[i].className); //funcionalidad de navegación
+            alert("Vamos al parche #:"+i+" clase: "+parche[i].className); 
+            setId(i)//funcionalidad de navegación
             location.replace("./detailparche.html")
         }
         else {
@@ -138,6 +139,7 @@ function generateRandomString(num) {
 }
 var idparches=[]
 function addParcheList(id) {
+    sessionStorage.setItem('parcheid',id)
     if(localStorage.getItem('idParches') != null){
         idparches = JSON.parse(localStorage.getItem('idParches'))
         idparches.push(id)
