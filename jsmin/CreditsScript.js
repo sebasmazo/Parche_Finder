@@ -1,0 +1,1 @@
+var regresar=document.querySelector(".regresar"),regresarrec=new Hammer(regresar);regresarrec.on("panleft panright tap press",(function(r){"tap"==r.type&&(window.location.href="./Settings.html")}));

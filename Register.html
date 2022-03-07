@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script type="text/javascript" src="jsmin/Auth.js"></script>
+    <link rel="shortcut icon" href="imgs/Icono.png">
+    <title>ParcheFinder</title>
+</head>
+<body>
+    
+    <div class="dadform">
+        <div class="form-register">
+        <label for="user">Nombre de usuario</label><br>
+          <input type="text" id="username" name="credencialesreg" ><br><br>
+
+        <label for="email">Correo Electronico</label><br>
+          <input type="text" id="email" name="credencialesreg" ><br><br>
+        
+        <label for="phone">Telefono Celular</label><br>
+          <input type="text" id="phone_number" name="credencialesreg" ><br><br>
+        
+        <label for="Id">Documento de identidad</label><br>
+        <select name="credencialesreg" id="comboCC">
+            <option value="CC" selected>Cedula de ciudadania</option>
+            <option value="Pasaporte">Pasaporte</option>
+            <option value="ExtCC">Cedula de extranjeria</option>
+        </select><br> <br>
+            <input type="text" id="Identificacion" name="credencialesreg">
+            <br><br>
+
+        <label for="upass">Contraseña</label><br><br>
+          <input id="password" type="password" name="credencialesreg" > <br>
+        
+        <button onclick='register()' id="btnSubmit" value="Login">Submit </button><!--Implementar onClick() con js-->
+        <button><a href="Login.html">Regresar</a></button>
+  
+        
+        </div>
+    </div>
+</body>
+</html>
