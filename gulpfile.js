@@ -19,7 +19,7 @@ function css() {
   return src("./sass/**/*.scss")
   .pipe(sass())
   .pipe(cleanCSS())
-  .pipe(rename('main.min.css'))
+  .pipe(rename('index.css'))
   .pipe(dest("./css"))
 }
 exports.css = css;
