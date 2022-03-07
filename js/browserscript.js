@@ -136,7 +136,7 @@ function generateRandomString(num) {
 
     return result1;
 }
-var idparches=[""]
+var idparches=[]
 function addParcheList(id) {
     if(localStorage.getItem('idParches') != null){
         idparches = JSON.parse(localStorage.getItem('idParches'))
