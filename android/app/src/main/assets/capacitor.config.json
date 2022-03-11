@@ -1,0 +1,6 @@
+{
+	"appId": "com.parchefinder.app",
+	"appName": "ParcheFinder",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
